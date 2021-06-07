@@ -1,0 +1,128 @@
+html {
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: rgba(0,0,0,0.85);
+    overflow-x: hidden;
+}
+
+#Heading {
+    display: none;
+}
+
+.Button {
+    background-color: darkgray;
+    color: black;
+    border: 0px black solid;
+    width: 19.5px;
+}
+
+.Button:hover {
+    background-color: white;
+}
+
+.OperatorButton {
+    background-color: rgb(255,165,0);
+    color: black;
+    border: 0px black solid;
+    width: 19.5px;
+}
+
+.OperatorButton:hover {
+    background-color: white;
+}
+
+.SpecialButton {
+    background-color: rgb(255,165,0);
+    color: black;
+    border: 0px black solid;
+}
+
+.SpecialButton:hover {
+    background-color: white;
+}
+
+#ClearButton {
+    width: 67px;
+}
+
+#CalculatorBody {
+    position: relative;
+    top: 48px;
+    width: 97px;
+}
+
+#CalculatorDisplay {
+    background-color: gray;
+    border: 0px black solid;
+    position: relative;
+    top: 50px;
+    width: 95px;
+    height: 0.5px;
+}
+
+.Display {
+    color: lightgray;
+    zoom: 300%;
+    position: relative;
+    bottom: 72px;
+    left: 204px;
+    display: block;
+    margin: auto;
+}
+
+#Calculator {
+    position: relative;
+    zoom: 300%;
+    top: 13px;
+    left: 200px;
+    width: 95px;
+}
+
+@media only screen and (max-width: 450px) {
+
+    #html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .Display {
+        color: lightgray;
+        zoom: 300%;
+        position: relative;
+        bottom: 55px;
+        left: 14px;
+        display: block;
+        margin: auto;
+    }
+
+    #Calculator {
+        top: 30px;
+        left: 12px;
+        width: 95px;
+    }
+
+    .SpecialButton:hover {
+        background-color: rgb(255,165,0);
+    }
+
+    .OperatorButton:hover {
+        background-color: rgb(255,165,0);
+    }
+
+    .Button:hover {
+        background-color: darkgray;
+    }
+
+    .SpecialButton:active {
+        background-color: white;
+    }
+
+    .OperatorButton:active {
+        background-color: white;
+    }
+
+    .Button:active {
+        background-color: white;
+    }
+
+}

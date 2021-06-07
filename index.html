@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <caption><p id="Heading">Calculator</p></caption>
+    <div id="Calculator">
+    <div id="CalculatorDisplay"></div>
+    <table id="CalculatorBody">
+        <tr>
+            <td colspan="3"><button type="button" id="ClearButton" class="SpecialButton" onclick="Clear();Reload();">Clear</button></td>
+            <td><button type="button" class="OperatorButton" onclick="Operator('+');Print();Reload();">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="Button" onclick="Calculator('a1');Print();Reload();">1</button></td>
+            <td><button type="button" class="Button" onclick="Calculator('b2');Print();Reload();">2</button></td>
+            <td><button type="button" class="Button" onclick="Calculator('c3');Print();Reload();">3</button></td>
+            <td><button type="button" class="OperatorButton" onclick="Operator('-');Print();Reload();">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="Button" onclick="Calculator('d4');Print();Reload();">4</button></td>
+            <td><button type="button" class="Button" onclick="Calculator('e5');Print();Reload();">5</button></td>
+            <td><button type="button" class="Button" onclick="Calculator('f6');Print();Reload();">6</button></td>
+            <td><button type="button" class="OperatorButton" onclick="Operator('*');Print();Reload();">*</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="Button" onclick="Calculator('g7');Print();Reload();">7</button></td>
+            <td><button type="button" class="Button" onclick="Calculator('h8');Print();Reload();">8</button></td>
+            <td><button type="button" class="Button" onclick="Calculator('i9');Print();Reload();">9</button></td>
+            <td><button type="button" class="OperatorButton" onclick="Operator('/');Print();Reload();">/</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="SpecialButton" onclick="SQRT();Print();Reload();">-/</button></td>
+            <td><button type="button" class="Button" onclick="Calculator('j0');Print();Reload();">0</button></td>
+            <td><button type="button" class="Button" onclick="Calculator('k.');Print();Reload();">.</button></td>
+            <td><button type="button" class="SpecialButton" onclick="Result();Reload();">=</button></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
